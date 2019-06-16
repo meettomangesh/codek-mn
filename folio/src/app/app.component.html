@@ -5,17 +5,19 @@
       <div class="container">
 
         <div class="logo">
-          <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+          <a [routerLink]="['']"><img src="assets/images/logo.png" alt="logo"></a>
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
 
         <ul class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">Home</a></li>
-          <li><a href="#about" class="smoothScroll">About</a></li>
-          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-          <li><a href="#journal" class="smoothScroll">Blog</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+
+          <li><a [routerLink]="['']"  class="smoothScroll">Home</a></li>
+          <li><a [routerLink]="['about-us']"  class="smoothScroll">About</a></li>
+          <li><a [routerLink]="['portfolio']"  class="smoothScroll">Portfolio</a></li>
+          <li><a [routerLink]="['journal']"  class="smoothScroll">Blog</a></li>
+          <li><a [routerLink]="['contact-us']"  class="smoothScroll">Contact</a></li>
+
         </ul>
 
       </div>
@@ -25,31 +27,31 @@
 
 
   <!-- start section header -->
-  <app-banner></app-banner>
+  <!-- <app-banner></app-banner> -->
   <!-- End section header -->
 
 
   <!-- start section about us -->
-  <app-attribute-slider></app-attribute-slider>
+  <!-- <app-attribute-slider></app-attribute-slider> -->
 
-  <!-- end section services -->
+  <!--  end section services  -->
 
 
   <!-- start section portfolio -->
-  <app-portfolio-item></app-portfolio-item>
+  <!-- <app-portfolio-item></app-portfolio-item> -->
 
   <!-- End section portfolio -->
 
 
   <!-- start section journal -->
-  <app-journal-item></app-journal-item>
+  <!-- <app-journal-item></app-journal-item> -->
 
   <!-- End section journal -->
 
 
   <!-- start sectoion contact -->
-  <app-contact-us></app-contact-us>
+  <!-- <app-contact-us></app-contact-us> --> 
 
   <!-- start sectoion contact -->
-  <app-footer></app-footer>
+  
 <router-outlet></router-outlet>
